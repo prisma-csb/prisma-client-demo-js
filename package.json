@@ -1,0 +1,32 @@
+{
+  "name": "prisma-client-js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "1.23.4"
+  },
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "graphql-yoga": "^1.16.1",
+    "prisma-client-lib": "1.23.4"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "load-ids": "node ./src/helpers/load-ids.js",
+    "filtering-and-sorting": "node ./src/reading-data/filtering-and-sorting.js",
+    "fluent-api": "node ./src/reading-data/fluent-api.js",
+    "lists-and-single-objects": "node ./src/reading-data/lists-and-single-objects.js",
+    "pagination": "node ./src/reading-data/pagination.js",
+    "create-update-delete": "node ./src/writing-data/create-update-delete.js",
+    "upsert": "node ./src/writing-data/upsert.js",
+    "declarative-nested-write": "node ./src/writing-data/declarative-nested-write.js",
+    "batching": "node ./src/writing-data/batching.js",
+    "field-selection": "node ./src/more-data-access/field-selection.js",
+    "native-graphql": "node ./src/more-data-access/native-graphql.js",
+    "realtime-subscriptions": "node ./src/more-data-access/realtime-subscriptions.js",
+    "reset-all-data": "prisma reset -f && prisma seed"
+  },
+  "keywords": [],
+  "description": ""
+}
