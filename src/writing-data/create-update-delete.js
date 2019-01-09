@@ -1,7 +1,7 @@
 const { prisma } = require('../generated/prisma-client')
 
 /**
- * ⚡️ Run `yarn create-update-delete` to execute this script (or `yarn start` for more info).
+ * ⚡️ Run `yarn create-update-delete` to execute this script (or `yarn start` for more choices).
  */
 
 async function main() {

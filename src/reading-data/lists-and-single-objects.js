@@ -1,7 +1,7 @@
 const { prisma } = require('../generated/prisma-client')
 
 /**
- * ⚡️ Run `yarn lists-and-single-objects` to execute this script (or `yarn start` for more info).
+ * ⚡️ Run `yarn lists-and-single-objects` to execute this script (or `yarn start` for more choices).
  */
 
 async function main() {

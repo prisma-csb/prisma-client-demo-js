@@ -1,7 +1,7 @@
 const { prisma } = require('../generated/prisma-client')
 
 /**
- * ⚡️ Run `yarn declarative-nested-write` to execute this script (or `yarn start` for more info).
+ * ⚡️ Run `yarn declarative-nested-write` to execute this script (or `yarn start` for more choices).
  *
  * NOTE: This script contains an ID-placeholder. Please replace this placeholder before
  * running the script by copying an ID that's printed when running `yarn load-ids`.
