@@ -5,8 +5,10 @@ const {
   moreChoices,
 } = require('./choices')
 const inquirer = require('inquirer')
+const { checkWritesEnabled } = require('./checkWritesEnabled')
 
-async function determineScript(writesEnabled) {
+async function determineScript() {
+  const writesEnabled = await checkWritesEnabled()
 
   const initialAnswer = await inquirer.prompt([
     {
