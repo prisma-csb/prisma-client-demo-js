@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
-    "prisma": "1.23.4"
+    "prisma": "beta"
   },
   "dependencies": {
     "chalk": "^2.4.2",
