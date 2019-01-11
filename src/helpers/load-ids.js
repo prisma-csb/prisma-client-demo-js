@@ -1,20 +1,12 @@
-const { prisma } = require("../generated/prisma-client");
-
-/**
- * NOTE: This script helps you to replace the
- * ID-placeholders (__POST_ID__ and __USER_ID__)
- * you find in some files. Execute the script
- * copy any ID from the output and replace a
- * placeholder with it.
- * Run `yarn load-ids` to execute this criupt.
- */
+const { prisma } = require('../generated/prisma-client')
+const chalk = require('chalk')
 
 async function main() {
-  const allPostsWithIDs = await prisma.posts();
-  console.log(`Posts: \n`, allPostsWithIDs);
+  const allPostsWithIDs = await prisma.posts()
+  console.log(chalk.cyan.bold(`Posts: \n`), allPostsWithIDs, '\n')
 
-  const allUsersWithIDs = await prisma.users();
-  console.log(`Users: \n`, allUsersWithIDs);
+  const allUsersWithIDs = await prisma.users()
+  console.log(chalk.cyan.bold(`Users: \n`), allUsersWithIDs)
 }
 
-main();
+main()
