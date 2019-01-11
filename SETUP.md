@@ -33,7 +33,6 @@ After `prisma deploy` has terminated, the Prisma client in `src/generated/prisma
 
 ### 4. Explore the Prisma client API
 
-
 Run the following command to start exploring:
 
 ```
