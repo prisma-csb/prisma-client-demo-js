@@ -29,9 +29,10 @@ Then, follow these steps in the interactive CLI wizard:
 1. **Authenticate** with Prisma Cloud in your browser
 1. Back in the CodeSandbox terminal, **confirm all suggested values**
 
+After `prisma deploy` has terminated, the Prisma client in `src/generated/prisma-client` is re-generated. This means any script you're running now will read or write data in your own demo database.
+
 ### 4. Explore the Prisma client API
 
-After `prisma deploy` has terminated, the Prisma client in `src/generated/prisma-client` is re-generated. This means any script you're running now will read or write data in your own demo database.
 
 Run the following command to start exploring:
 
