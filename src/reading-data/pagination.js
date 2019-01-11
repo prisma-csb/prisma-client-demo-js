@@ -2,6 +2,10 @@ const { prisma } = require('../generated/prisma-client')
 
 /**
  * ⚡️ Run `yarn pagination` to execute this script (or `yarn start` for more choices).
+ *
+ * ⚠️ This scripts uses hardcoded IDs. If you've set up your own demo database, you need to replace
+ * them with real IDs from your database. Run `yarn load-ids` to retrieve a list of all IDs. 
+ * 
  */
 
 async function main() {
@@ -23,14 +27,14 @@ async function main() {
   // Fetch the first 5 posts after a cursor
   const paginatedPosts3 = await prisma.posts({
     first: 5,
-    after: 'cjnymovqjs3hm0a51hfdprde6',
+    after: 'cjnymovqjs3hm0a51hfdprde6', // HARDCODED ID (run `$ yarn load-ids` to find a replacement)
   })
   console.log(paginatedPosts3)
 
   // Fetch the last 5 posts before a cursor
   const paginatedPosts4 = await prisma.posts({
     last: 5,
-    before: 'cjnymow08s3i70a51akud49tl',
+    before: 'cjnymow08s3i70a51akud49tl', // HARDCODED ID (run `$ yarn load-ids` to find a replacement)
   })
   console.log(paginatedPosts4)
 }
