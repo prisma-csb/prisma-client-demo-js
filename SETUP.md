@@ -43,7 +43,7 @@ yarn start
 You can also run the scripts defined in [`package.json`](./package.json#L17) directly, e.g.:
 
 ```
-yarn filtering-and-sorting # executes `src/reading-data/filterting-and-sorting.ts`
+yarn filtering-and-sorting # executes `src/reading-data/filterting-and-sorting.js`
 ```
 
 **IMPORTANT**: Most of the scripts contain calls with hardcoded IDs (e.g. [here](./src/reading-data/fluent-api.js#L16)). Once you've forked the project and connected it to your own demo database, these IDs won't be valid any more. You can run `$ yarn load-ids` to print a list of the new IDs that were generated for your project and replace the hardcoded ones.
